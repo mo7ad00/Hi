@@ -331,18 +331,6 @@ local CoolSlider = Tab:AddSlider({
 
 
 
-Tab:AddButton({ 	Name  = "الريست", 	Callback = function()
-
-game.StarterGui:SetCore("SendNotification", {
-    Title = "تم التشغيل";
-    Text = "ملاحظه: في اوقات يمكن تعلق ل شوي و اوقات تعلق لازم تطلع و تدخل"; -- ARAB TEAM
-    Duration = 5;
-})
-
-game.Players.LocalPlayer.Character.Humanoid.Health = 0
-
-end })
-
 local Tab = Window:MakeTab({"الاغاني"})
 local Section = Tab:AddSection({
 	Name = "الاغاني العربية"
@@ -2701,3 +2689,4 @@ local args = {
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
 
 end })
+
